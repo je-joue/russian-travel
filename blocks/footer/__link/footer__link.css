@@ -1,8 +1,27 @@
 .footer__link {
-  margin: 0;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 112%;
   text-decoration: none;
   color: #ffffff;
+  margin-right: 18px;
+  transition: opacity 0.5s linear;
+}
+
+.footer__link:last-of-type {
+  margin-right: 0;
+}
+
+.footer__link:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__link {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__link:last-of-type {
+    margin-bottom: 0;
+  }
 }

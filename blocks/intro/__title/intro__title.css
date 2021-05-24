@@ -1,8 +1,21 @@
 .intro__title {
   margin: 0;
-  max-width: 690px;
   font-weight: 900;
   font-size: 54px;
   line-height: 107%;
+  padding-bottom: 40px;
+}
 
+@media screen and (max-width: 768px) {
+  .intro__title {
+    font-size: calc((100vw - 321px) / (768 - 321) * (54 - 32) + 32px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 109%;
+  }
 }

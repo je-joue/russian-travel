@@ -1,8 +1,8 @@
 .page {
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   background-color: #2A2C2F;
   font-family: 'Inter', Arial, sans-serif;
   color: #ffffff;
-  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }

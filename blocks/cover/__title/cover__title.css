@@ -3,6 +3,26 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 106%;
+  text-decoration: none;
+  color: #ffffff;
   max-width: 560px;
   text-align: center;
+  padding-bottom: 32px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .cover__title {
+    font-size: calc((100vw - 321px) / (768 - 321) * (72 - 32) + 32px);
+    max-width: calc((100vw - 321px) / (768 - 321) * (560 - 255) + 255px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__title {
+    font-size: 10vw;
+    line-height: 109%;
+    max-width: calc(100vw * 255 / 320);
+    padding-bottom: 16px;
+  }
 }

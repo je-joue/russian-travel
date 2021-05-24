@@ -1,0 +1,12 @@
+.cover__background {
+  position: relative;
+  background-image: url(../../../images/cover_pic.jpg);
+  background-size: contain;
+  width: 100%;
+
+  padding-top: 62.5%;
+
+
+}
+
+

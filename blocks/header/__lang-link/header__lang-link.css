@@ -4,4 +4,16 @@
   line-height: 117%;
   text-decoration: none;
   color: #ffffff;
+  margin-right: 18px;
+}
+
+.header__lang-link:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 111%;
+  }
 }

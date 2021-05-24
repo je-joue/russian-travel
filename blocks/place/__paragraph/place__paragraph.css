@@ -3,4 +3,31 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 163%;
+  padding-bottom: 26px;
+}
+
+.place__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .place__paragraph {
+    padding-bottom: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__paragraph {
+    font-size: 16px;
+    padding-bottom: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

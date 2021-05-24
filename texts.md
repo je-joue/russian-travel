@@ -91,6 +91,10 @@ https://vk.com/baikalmile
 5. Карелия:
 http://vodlozero.ru
 
+cover:
+1. До Байкала на собаках:
+https://stampsy.com/na-elektrichkakh-do-baikala
+
 footer:
 1. Карты:
 https://yandex.ru/maps

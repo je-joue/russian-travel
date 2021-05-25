@@ -1,5 +1,4 @@
 .cover {
   grid-area: cover;
   width: 100%;
-  box-sizing: border-box;
 }

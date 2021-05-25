@@ -1,33 +1,5 @@
 .cover {
-
+  grid-area: cover;
   width: 100%;
-
-  padding-left: 48px;
-  padding-right: 48px;
-  padding-bottom: 92px;
   box-sizing: border-box;
-}
-
-
-@media screen and (max-width: 1024px) {
-  .cover {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cover {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 88px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .cover {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 64px;
-  }
 }

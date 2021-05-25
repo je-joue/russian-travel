@@ -1,3 +1,77 @@
 .content {
+  grid-area: content;
   width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, min-content 92px);
+  grid-template-columns: calc((100vw - 1025px) / (1280 - 1025) * (100 - 48) + 48px) 1fr calc((100vw - 1025px) / (1280 - 1025) * (100 - 48) + 48px);
+  grid-template-areas:
+  ". lead ."
+  ". . ."
+  ". intro intro"
+  ". . ."
+  "photo-grid photo-grid photo-grid"
+  ". . ."
+  ". places ."
+  ". . ."
+  "cover cover cover"
+  ". . .";
+}
+
+@media screen and (min-width: 1281px) {
+  .content {
+    grid-template-columns: 100px 1fr 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    grid-template-columns: calc((100vw - 769px) / (1024 - 769) * (48 - 24) + 24px) 1fr calc((100vw - 769px) / (1024 - 769) * (48 - 24) + 24px);
+    grid-template-areas:
+    ". lead ."
+    ". . ."
+    ". intro intro"
+    ". . ."
+    ". photo-grid ."
+    ". . ."
+    ". places ."
+    ". . ."
+    "cover cover cover"
+    ". . .";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-rows: repeat(5, min-content 88px);
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-areas:
+    "lead lead lead"
+    ". . ."
+    ". intro ."
+    ". . ."
+    ". photo-grid ."
+    ". . ."
+    ". places ."
+    ". . ."
+    "cover cover cover"
+    ". . .";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    grid-template-rows: repeat(5, min-content 64px);
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-areas:
+    "lead lead lead"
+    ". . ."
+    ". intro ."
+    ". . ."
+    ". photo-grid ."
+    ". . ."
+    "places places places"
+    ". . ."
+    "cover cover cover"
+    ". . .";
+  }
 }

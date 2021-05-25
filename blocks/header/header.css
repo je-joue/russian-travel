@@ -1,8 +1,7 @@
 .header {
+  grid-area: header;
   display: flex;
   justify-content: space-between;
-  padding-right: 48px;
-  padding-left: 48px;
   padding-bottom: 56px;
 }
 
@@ -12,18 +11,3 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 48px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-bottom: 48px;
-  }
-}

@@ -3,17 +3,34 @@
   max-width: 1280px;
   padding-top: 28px;
   padding-bottom: 24px;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: 48px 1fr 48px;
+  grid-template-areas:
+  ". header ."
+  ". content ."
+  ". footer .";
 }
 
 @media screen and (max-width: 1024px) {
   .page__content {
     max-width: 1024px;
+    grid-template-columns: 48px 1fr 48px;
+    grid-template-areas:
+    ". header ."
+    "content content content"
+    ". footer .";
   }
 }
 
 @media screen and (max-width: 768px) {
   .page__content {
     max-width: 768px;
+    grid-template-columns: 24px 1fr 24px;
+    grid-template-areas:
+    ". header ."
+    "content content content"
+    ". footer .";
   }
 }
 
@@ -21,5 +38,10 @@
   .page__content {
     max-width: 320px;
     padding-top: 16px;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-areas:
+    ". header ."
+    "content content content"
+    ". footer footer";
   }
 }

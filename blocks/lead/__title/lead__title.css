@@ -12,13 +12,17 @@
   .lead__title {
     font-size: calc((100vw - 321px) / (768 - 321) * (96 - 40) + 40px);
     padding-bottom: calc((100vw - 321px) / (768 - 321) * (32 - 16) + 16px);
+    max-width: calc((100vw - 321px) / (768 - 321) * (720 - 288) + 288px);
   }
 }
 
 @media screen and (max-width: 320px) {
   .lead__title {
-    font-size: 40px;
+    font-size: calc(100vw * 40 / 320);
+    /* font-size: 40px; */
     line-height: 110%;
     padding-bottom: 16px;
+    /* max-width: 288px; */
+    max-width: calc(100vw * 288 / 320);
   }
 }

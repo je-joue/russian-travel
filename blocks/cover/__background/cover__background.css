@@ -1,12 +1,51 @@
 .cover__background {
-  position: relative;
+  height: calc((100vw - 2 * 48px) * 0.625);
+  width: auto;
   background-image: url(../../../images/cover_pic.jpg);
   background-size: contain;
-  width: 100%;
-
-  padding-top: 62.5%;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
+.cover__background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a2c2f;
+  opacity: .3;
+  transition: opacity 0.5s linear;
+}
 
+.cover__background:hover::before {
+  opacity: .8;
+}
+
+@media screen and (min-width: 1281px) {
+  .cover__background {
+    height: 740px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cover__background {
+    height: calc(100vw * 0.625);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__background {
+    height: calc(100vw * 0.625);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__background {
+    height: calc(100vw * 0.625);
+  }
+}

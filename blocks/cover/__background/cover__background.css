@@ -2,7 +2,6 @@
   height: calc((100vw - 2 * 48px) * 0.625);
   width: auto;
   background-image: url(../../../images/cover_pic.jpg);
-  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;

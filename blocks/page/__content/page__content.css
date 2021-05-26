@@ -15,7 +15,6 @@
 @media screen and (max-width: 1024px) {
   .page__content {
     max-width: 1024px;
-    grid-template-columns: 48px 1fr 48px;
     grid-template-areas:
     ". header ."
     "content content content"
